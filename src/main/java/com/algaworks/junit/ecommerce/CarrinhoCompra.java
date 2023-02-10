@@ -60,10 +60,9 @@ public class CarrinhoCompra {
 	}
 
     public BigDecimal getValorTotal() {
-		this.itens.stream()
+		return this.itens.stream()
 				.map(ItemCarrinhoCompra::getValorTotal)
 				.reduce(BigDecimal.ZERO, BigDecimal::add);
-		return null;
     }
 
 	public int getQuantidadeTotalDeProdutos() {
