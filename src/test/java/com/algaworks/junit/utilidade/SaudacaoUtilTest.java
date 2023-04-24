@@ -46,7 +46,7 @@ class SaudacaoUtilTest {
 
         //Assert
         IllegalArgumentException e = assertThrows(IllegalArgumentException.class, chamadaInvalidaDeMetodo);
-        assertEquals("Hora inválida", e.getMessage());
+        assertEquals("Hora invalida", e.getMessage());
     }
 
     //Teste não necessário, pois o primeiro teste já seria suficiente
